@@ -2,13 +2,15 @@
 
 use strict;
 
-use lib '/home/username/Yo';
+use lib '/home/yourdirectory/Yo';
 
 use Yo;
 
 my $api_token = "yo-api-token";
 
 my $yo = Yo->new($api_token);
+
+$yo->set_link("http://optionalurltosomething");
 
 $yo->all;
 
